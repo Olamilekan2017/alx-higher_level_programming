@@ -53,6 +53,6 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ("")
         else:
-            rectangle_str = "#" * self.width + "\n"
-            rectangle_str = rectangle_str * self.height
+            rectangle_str = "\n".join("#" * self.__width
+                                      for j in range(self.__height))
             return (rectangle_str)
