@@ -3,5 +3,7 @@
 
 
 def read_file(filename=""):
-    with open(filename, encoding="utf-8") as i:
-        print(i.read(), end="")
+    """ Prints the details of UTF8 text file """
+
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
