@@ -1,4 +1,4 @@
-#!/isr/bin/python3
+#!/usr/bin/python3
 """Python script that takes in a URL"""
 import requests
 import sys
@@ -7,8 +7,8 @@ import sys
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         ur = requests.get(sys.argv[1])
-        urlststus = ur.status_code
+        urlstatus = ur.status_code
         if urlstatus > 399:
-            print("Error code: {}".(urlstatus))
+            print("Error code: {}".format(urlstatus))
         else:
             print(ur.text)
