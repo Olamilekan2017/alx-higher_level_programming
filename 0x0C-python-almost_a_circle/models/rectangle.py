@@ -50,7 +50,7 @@ class Rectangle(Base):
     def x(self, value):
         if type(value) != int:
             raise TypeError("x must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -63,7 +63,7 @@ class Rectangle(Base):
     def y(self, value):
         if type(value) != int:
             raise TypeError("y must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 
@@ -92,7 +92,7 @@ class Rectangle(Base):
         """ Return the dictionary representation of a rectangle """
         return {
             "id": self.id,
-            "weight": self.weight,
+            "width": self.width,
             "height": self.height,
             "x": self.x,
             "y": self.y

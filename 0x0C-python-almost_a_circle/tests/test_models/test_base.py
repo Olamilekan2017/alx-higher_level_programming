@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Defines unittests for class base.py """
-
-import os
+""" Defines the unittest test for the class base """
 import unittest
+import os
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square

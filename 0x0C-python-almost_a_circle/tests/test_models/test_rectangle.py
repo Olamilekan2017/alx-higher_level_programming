@@ -314,7 +314,7 @@ class TestRectangle_x(unittest.TestCase):
 
     def test_negative_x(self):
         with self.assertRaisesRegex(ValueError, "x must be >= 0"):
-            Rectangle(5, 3, -1, 0)
+            Rectangle(3, 5, 0, -1)
 
 
 class TestRectangle_y(unittest.TestCase):

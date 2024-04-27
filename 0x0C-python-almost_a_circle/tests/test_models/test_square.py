@@ -286,7 +286,7 @@ class TestSquare_y(unittest.TestCase):
 
     def test_negative_y(self):
         with self.assertRaisesRegex(ValueError, "y must be >= 0"):
-            Square(3, 0, -1)
+            Square(5, -1, 0)
 
 
 class TestSquare_order_of_initialization(unittest.TestCase):
@@ -298,7 +298,7 @@ class TestSquare_order_of_initialization(unittest.TestCase):
 
     def test_size_before_y(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            Square("invalid size", 1, "invalid y")
+            Square("invalid size", "invalid y")
 
     def test_x_before_y(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
