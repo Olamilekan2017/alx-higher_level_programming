@@ -8,6 +8,6 @@ if __name__ == "__main__":
         if ur.read():
             urldata = ur.read()
             print("Body response:")
-            print("\t- type: {}".format(type(urldata)))
-            print("\t- content: {}".format(urldata))
-            print("\t- utf8 content: {}".format(urldata.decode('utf-8')))
+            print(f"\t- type: {type(urldata)}")
+            print(f"\t- content: {urldata}")
+            print(f"\t- utf8 content: {urldata.decode('utf-8')}")
